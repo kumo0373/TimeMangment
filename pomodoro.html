@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pomodoro.css">
+    <title>تقنية بومودورو</title>
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+    </header>
+    <main>
+        <div class="timer-container">
+            <h2 id="timer">25:00</h2>
+            <label for="workTime">وقت العمل (دقائق):</label>
+            <input type="number" id="workTime" value="25" min="1" />
+            <br>
+            <label for="breakTime">وقت الاستراحة (دقائق):</label>
+            <input type="number" id="breakTime" value="5" min="1" />
+            <br>            
+            <button id="startButton" class="button">ابدأ</button>
+            <button id="resetButton" class="button">إعادة ضبط</button>
+        </div>
+        <button id="statsButton" class="button2">عرض الإحصائيات</button>
+    </main>
+    <script src="pomodoro.js"></script>
+</body>
+</html>

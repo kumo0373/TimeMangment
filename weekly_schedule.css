@@ -1,0 +1,113 @@
+/* تنسيق الصفحة العامة */
+body {
+    font-family: 'work-sans', sans-serif; /* يمكنك تغيير الخط هنا */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    text-align: center;
+}
+
+/* تنسيق العنوان */
+header {
+    background-color: #0085FF;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الأزرار */
+.controls {
+    margin-bottom: 20px;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0085FF;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #006bb5;
+}
+
+.button.clear {
+    background-color: #FF5C5C;
+}
+
+.button.clear:hover {
+    background-color: #d9534f;
+}
+
+/* تنسيق الجدول */
+.table-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #0085FF;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #f0f0f0;
+}
+
+/* تنسيق المهام داخل الجدول حسب نوع المهمة */
+.task-cell {
+    color: white;
+    font-weight: bold;
+}
+
+.task-study {
+    background-color: #ffbf00; /* لون الدراسة */
+}
+
+.task-work {
+    background-color: #28a745; /* لون الشغل */
+}
+
+.task-exercise {
+    background-color: #17a2b8; /* لون التمرين */
+}
+
+.task-other {
+    background-color: #6f42c1; /* لون المهام الأخرى */
+}
+
+/* إضافة تنسيق أفضل لحقول الإدخال */
+td input[type="text"], td select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}

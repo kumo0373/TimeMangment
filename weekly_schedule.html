@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجدول الأسبوعي</title>
+    <link rel="stylesheet" href="weekly_schedule.css"> <!-- رابط لملف CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>إدارة الوقت: الجدول الأسبوعي</h1>
+    </header>
+
+    <!-- الأزرار الخاصة بالحفظ والمسح -->
+    <div class="controls">
+        <button id="save-btn" class="button">حفظ الجدول</button>
+        <button id="clear-btn" class="button clear">مسح الجدول</button>
+    </div>
+
+    <!-- الجدول الأسبوعي -->
+    <div class="table-container">
+        <table id="schedule-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody id="schedule-body">
+                <!-- سيتم إنشاء صفوف الجدول ديناميكيًا باستخدام JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="weekly_schedule.js"></script> <!-- رابط لملف JavaScript -->
+</body>
+</html>

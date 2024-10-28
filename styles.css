@@ -1,0 +1,70 @@
+body {
+    font-family: 'work-sans', sans-serif; /* يمكنك تغيير الخط هنا */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0085FF;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* حاوية الميزات */
+.feature-container {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للعناصر بالتدفق إلى السطر التالي */
+    justify-content: center;
+    margin: 20px;
+}
+
+/* تصميم كل ميزة */
+.feature {
+    background-color: #0085FF;
+    color: white;
+    border-radius: 50%;
+    width: 200px; /* حجم الدائرة */
+    height: 200px; /* حجم الدائرة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-decoration: none;
+    position: relative; /* للتأكد من تغطية الرابط للدائرة بالكامل */
+    font-weight: bold; /* جعل الخط عريض */
+    font-size: 20px; /* حجم الخط */
+    transition: transform 0.2s; /* تأثير التحويل */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* تكبير الدائرة عند التمرير */
+}
+
+.feature a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* اجعل الرابط يغطي الدائرة بالكامل */
+    height: 100%; /* اجعل الرابط يغطي الدائرة بالكامل */
+    font-weight: bold; /* جعل الخط عريض داخل الرابط */
+}
+
+/* استعلامات الوسائط لجعل التصميم متجاوب */
+@media (max-width: 768px) {
+    .feature {
+        width: 150px; /* حجم الدائرة عند الشاشات الصغيرة */
+        height: 150px; /* حجم الدائرة عند الشاشات الصغيرة */
+        font-size: 18px; /* حجم الخط عند الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        width: 100px; /* حجم الدائرة عند الشاشات الصغيرة جدًا */
+        height: 100px; /* حجم الدائرة عند الشاشات الصغيرة جدًا */
+        font-size: 16px; /* حجم الخط عند الشاشات الصغيرة جدًا */
+    }
+}

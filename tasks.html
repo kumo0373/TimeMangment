@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tasks.css">
+    <title>قائمة المهام اليومية</title>
+</head>
+<body>
+    <header>
+        <h1>قائمة المهام اليومية</h1>
+    </header>
+
+    <main>
+        <div class="task-container">
+            <input type="text" id="newTaskInput" placeholder="أضف مهمة جديدة..." />
+            <input type="time" id="taskStartTimeInput" placeholder="بداية المهمة" />
+            <input type="time" id="taskEndTimeInput" placeholder="نهاية المهمة" />
+            <button id="addTaskButton" class="button">إضافة</button>
+
+            <ul id="taskList"></ul>
+        </div>
+    </main>
+
+    <script src="tasks.js"></script>
+</body>
+</html>

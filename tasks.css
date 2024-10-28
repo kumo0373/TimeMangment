@@ -1,0 +1,105 @@
+body {
+    font-family: 'work-sans', sans-serif; /* يمكنك تغيير الخط هنا */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    padding: 1em 0;
+    background-color: #0085FF; /* اللون الأساسي الجديد */
+    color: white;
+    font-size: 2em;
+}
+
+.task-container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0085FF; /* اللون الأساسي الجديد */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #006FCC; /* لون أغمق عند التمرير */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-actions button {
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: white;
+}
+
+/* زر إكمال المهمة باللون الأخضر */
+.task-actions button:first-child {
+    background-color: #28a745; /* لون أخضر */
+}
+
+.task-actions button:first-child:hover {
+    background-color: #218838; /* لون أخضر داكن عند التمرير */
+}
+
+/* زر حذف المهمة باللون الأحمر */
+.task-actions button:last-child {
+    background-color: #dc3545; /* لون أحمر */
+}
+
+.task-actions button:last-child:hover {
+    background-color: #c82333; /* لون أحمر داكن عند التمرير */
+}
+input[type="text"], input[type="time"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="time"] {
+    width: 30%;
+}
